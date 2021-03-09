@@ -12,55 +12,5 @@
  *
  *= require_tree .
  *= require_self
+ *= require footer.css
  */
-
-#contact-area {
-  text-align: center;
-  background-color: #f5f5f5;
-  margin-top: 50px;
-}
-
-h3 {
-  font-weight: bold;
-}
-
-.contact-box {
-  padding-bottom: 20px;
-}
-
-.contact-box i{
-  color: blue !important;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.contact-title {
-  font-weight: bold;
-  color: #000 !important;
-}
-
-.contact-title:hover{
-  color: red !important;
-}
-
-#copy-area {
-  background-color: gray;
-}
-
-#copy-area .container {
-  padding: 10px 0;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-#copy-area .container span{
-  margin-bottom: 0;
-  font-weight: bold
-}
-
-#copy-area .container span {
-  color: #fff  !important;
-}
