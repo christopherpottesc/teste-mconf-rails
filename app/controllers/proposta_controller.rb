@@ -1,0 +1,2 @@
+class PropostaController < ApplicationController
+end

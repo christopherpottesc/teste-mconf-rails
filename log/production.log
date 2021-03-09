@@ -1,0 +1,25 @@
+I, [2021-03-08T19:25:14.373955 #36929]  INFO -- : [b167b2b4-6f7b-4b53-8e39-a375cd548901] Started GET "/" for 127.0.0.1 at 2021-03-08 19:25:14 -0300
+I, [2021-03-08T19:25:14.375821 #36929]  INFO -- : [b167b2b4-6f7b-4b53-8e39-a375cd548901] Processing by MessagesController#index as HTML
+I, [2021-03-08T19:25:14.402013 #36929]  INFO -- : [b167b2b4-6f7b-4b53-8e39-a375cd548901] Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.1ms | Allocations: 1083)
+F, [2021-03-08T19:25:14.402764 #36929] FATAL -- : [b167b2b4-6f7b-4b53-8e39-a375cd548901]   
+[b167b2b4-6f7b-4b53-8e39-a375cd548901] ActiveRecord::StatementInvalid (Could not find table 'messages'):
+[b167b2b4-6f7b-4b53-8e39-a375cd548901]   
+[b167b2b4-6f7b-4b53-8e39-a375cd548901] app/controllers/messages_controller.rb:5:in `index'
+I, [2021-03-08T19:25:14.574538 #36929]  INFO -- : [8f799cc6-4e3f-4ddb-a8f2-97e0baaaee5b] Started GET "/favicon.ico" for 127.0.0.1 at 2021-03-08 19:25:14 -0300
+F, [2021-03-08T19:25:14.575246 #36929] FATAL -- : [8f799cc6-4e3f-4ddb-a8f2-97e0baaaee5b]   
+[8f799cc6-4e3f-4ddb-a8f2-97e0baaaee5b] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[8f799cc6-4e3f-4ddb-a8f2-97e0baaaee5b]   
+I, [2021-03-08T19:25:20.131613 #36929]  INFO -- : [174c021d-c399-410c-acbc-b707f5ce7f30] Started GET "/" for 127.0.0.1 at 2021-03-08 19:25:20 -0300
+I, [2021-03-08T19:25:20.133962 #36929]  INFO -- : [174c021d-c399-410c-acbc-b707f5ce7f30] Processing by MessagesController#index as HTML
+I, [2021-03-08T19:25:20.136781 #36929]  INFO -- : [174c021d-c399-410c-acbc-b707f5ce7f30] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 263)
+F, [2021-03-08T19:25:20.138711 #36929] FATAL -- : [174c021d-c399-410c-acbc-b707f5ce7f30]   
+[174c021d-c399-410c-acbc-b707f5ce7f30] ActiveRecord::StatementInvalid (Could not find table 'messages'):
+[174c021d-c399-410c-acbc-b707f5ce7f30]   
+[174c021d-c399-410c-acbc-b707f5ce7f30] app/controllers/messages_controller.rb:5:in `index'
+I, [2021-03-08T19:25:31.966345 #36929]  INFO -- : [dccf79fc-94e1-4a71-bf77-e4910b6215c0] Started GET "/" for 127.0.0.1 at 2021-03-08 19:25:31 -0300
+I, [2021-03-08T19:25:31.967233 #36929]  INFO -- : [dccf79fc-94e1-4a71-bf77-e4910b6215c0] Processing by MessagesController#index as HTML
+I, [2021-03-08T19:25:31.968340 #36929]  INFO -- : [dccf79fc-94e1-4a71-bf77-e4910b6215c0] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms | Allocations: 263)
+F, [2021-03-08T19:25:31.970442 #36929] FATAL -- : [dccf79fc-94e1-4a71-bf77-e4910b6215c0]   
+[dccf79fc-94e1-4a71-bf77-e4910b6215c0] ActiveRecord::StatementInvalid (Could not find table 'messages'):
+[dccf79fc-94e1-4a71-bf77-e4910b6215c0]   
+[dccf79fc-94e1-4a71-bf77-e4910b6215c0] app/controllers/messages_controller.rb:5:in `index'

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjetoMconf</title>
+    <link rel="icon" href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <%= nav_bar brand:"Projeto Mconf", brand_link: root_url do %>
+      <%= menu_group do %>
+        <%= menu_item "Proposta", proposta_path %>
+      <% end %>
+    <% end %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  <%# <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="row d-flex" style="text-align: center">
+        <div class="center">
+          <a href="https://www.linkedin.com/in/christopherpottesc/" target="_blank"><i class="bi bi-linkedin" style="font-size: 24px; color: blue; padding-right: 4px"></i></a>
+          <a href="https://github.com/christopherpottesc" target="_blank"><i class="bi bi-github" style="font-size: 24px; color: blue; padding-left: 4px"></i></a>
+        </div>
+        <div class="developer">
+          Desenvolvido por Christopher Pottes
+        </div>
+      </div>
+    </div>
+  </footer> %>
+
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>CONTATO</h3>
+          </div>
+
+          <div class="col-md-6 contact-box">
+              <i class="bi bi-linkedin"></i>
+              <p>
+                <a href="https://www.linkedin.com/in/christopherpottesc/" target="_blank">
+                  <span class="contact-title">LinkedIn</span>
+                </a>
+              </p>
+          </div>
+
+          <div class="col-md-6 contact-box">
+            <a href="https://github.com/christopherpottesc" target="_blank">
+              <i class="bi bi-github"></i>
+              <p>
+                <span class="contact-title">GitHub</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p> Densenvolvidor por <span>Christopher Pottes</span> &copy; 2021. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
