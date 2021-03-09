@@ -1,0 +1,62 @@
+<div class="content">
+<h2>Descrição da aplicação:</h2>
+<div class="divider"></div>
+<div>
+  <p>Criar uma aplicação Rails para submissão e exibição de mensagens de texto. O usuário entra em uma página web, escreve uma mensagem em um campo de texto e clica em um botão para submeter.</p>
+  <p>A página tem duas seções:</p>
+
+  <ul>
+    <li>Os campos de submissão (input de texto e botão de enviar) no topo;</li>
+    <li>Todas as mensagens já submetidas logo a baixo, uma após a outra. Cada mensagem é exibida no format: "data de submissão: mensagem".</li>
+  </ul>
+  <p>
+    Ao exibir a lista de mensagens na página, converter as URLs para links utilizando a
+    biblioteca <a>https://github.com/tenderlove/rails_autolink</a>. Se o texto da mensagem contém a palavra "Mconf"
+    (qualquer grafia da palavra, incluindo "MConf", "MCONF", "mcoNF"), converter para "Mconf" (exatamente nessa grafia),
+    exibir em negrito e em uma cor sorteada entre as seguintes cores: #481E9D, #8D74C0, #CA4B57, #2B2D42, #1C77C3, #81B29A, #E98039.
+  </p>
+
+  <p>
+    Enquanto o usuário está escrevendo sua mensagem (antes de submeter), se ele escrever a palavra "Mconf" (em qualquer grafia),
+    mudar a cor de fundo da página para uma cor aleatória na lista de cores acima. Se ele apagar a palavra "Mconf", voltar a
+    cor do fundo para a cor padrão.
+  </p>
+</div>
+
+<h2>Dicas gerais:</h2>
+<div class="divider"></div>
+<ul>
+  <li>Utilizar qualquer versão do Rails, de preferência a última</li>
+  <li>Utilizar qualquer versão do ruby</li>
+  <li>Guardar as mensagens em um banco de dados SQLite utilizando models do Rails para o mapeamento</li>
+  <li>Colocar o resultado em um repositório aberto no GitHub ou Bitbucket e compartilhar o link do mesmo</li>
+</ul>
+
+
+<h3 class="subtitle">Link da proposta no Gitub</h3>
+<a>https://gist.github.com/daronco/f24e02a3e8741fedce26ed8348b4e8c0</a>
+
+<h3 class="subtitle">Link do projeto desenvolvido no GitHub</h3>
+<a>https://gist.github.com/daronco/f24e02a3e8741fedce26ed8348b4e8c0</a>
+
+</div>
+
+
+<style>
+.content {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px 40px 40px;
+  margin-top: 20px;
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+.divider {
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  width: 100%;
+}
+</style>
