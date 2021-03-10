@@ -6,8 +6,7 @@ class MessagesController < ApplicationController
   end
 
   def create
-    message = message_params
-    @message = Message.new message
+    @message = Message.new message_params
 
     begin
       @message.save!
@@ -17,11 +16,16 @@ class MessagesController < ApplicationController
       flash[:error] = exception.message
     end
 
-    redirect_to root_url
+    redirect_page
   end
 
+  private
   def message_params
     params.require(:message).permit(:description)
+  end
+
+  def redirect_page
+    redirect_to root_url
   end
 
 end

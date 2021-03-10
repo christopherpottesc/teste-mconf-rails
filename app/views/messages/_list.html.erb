@@ -1,0 +1,19 @@
+<% @list_messages.each do |message| %>
+  <p id="div-messages"> <%= message.created_at.strftime("%d de %b, %Y - %H:%M") %>:
+    <%= auto_link(message.description.gsub(/mconf/i,
+      "<span><b>Mconf</b></span>"))
+    %>
+  </p>
+<% end %>
+
+<script>
+var colors_mconf = ['#481E9D', '#8D74C0', '#CA4B57',
+                    '#2B2D42', '#1C77C3', '#81B29A', '#E98039'
+                   ]
+
+var string_mconf = document.getElementsByTagName("span");
+for (var i = 0; i < string_mconf.length; i++) {
+  const randomColor = Math.floor(Math.random() * colors_mconf.length);
+  string_mconf[i].style.color = colors_mconf[randomColor];
+}
+</script>

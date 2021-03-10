@@ -1,0 +1,36 @@
+<%= form_for @message do |form| %>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+          <div class="form-group">
+            <%= form.label :Descrição %>
+            <%= form.text_area :description, id:"textarea", class:"form-control", rows:4 %>
+          </div>
+        </div>
+    </div>
+    <%= form.submit "Enviar mensagem", class:"btn btn-primary" %>
+  </div>
+<% end %>
+
+
+<script>
+var field_textarea = document.getElementById('textarea');
+var background_element = document.getElementById("background-div");
+var colors = ['#481E9D', '#8D74C0', '#CA4B57', '#2B2D42', '#1C77C3', '#81B29A', '#E98039']
+var color_white = "rgb(255, 255, 255)"
+field_textarea.addEventListener('input', updateValue);
+
+function updateValue(e) {
+  const value_input = e.target.value;
+  const presence_text_mconf = value_input.toLowerCase().includes("mconf")
+
+  if (presence_text_mconf) {
+    if (background_element.style.background == color_white) {
+      const randomColor = Math.floor(Math.random() * colors.length);
+      background_element.style.background = colors[randomColor];
+    }
+  } else {
+    background_element.style.background = "#fff";
+  }
+}
+</script>
