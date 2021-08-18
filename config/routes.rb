@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :messages, only: [:new, :create]
   resources :proposta
 
-  get "/teste-app"
+  # get "/teste_app"
+  resources :teste_app
 
 end
